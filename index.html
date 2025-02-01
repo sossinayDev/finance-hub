@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>finance-hub</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main_content.js"></script>
+</head>
+
+<body>
+    <div id="sidebar">
+        <div id="topbar">
+            <h1><strong>HUB </strong>Finance</h1>
+        </div>
+        <div id="budgets">
+            <div class="budget_container">
+                <h3>My accounts</h3>
+                <select id="account_selector"></select><button class="small-btn" onclick="switch_account()">[>]</button><button class="small-btn" onclick="delete_account()">[X]</button><br>
+                <input id="new_account_name"><button class="small-btn" onclick="create_new_account()">[+]</button>
+            </div>
+            <div class="budget_container">
+                <h3>Quick transfer</h3>
+                <p>Transfer <input type="number" placeholder="Amount" id="quicktransfer_amount"> from <select id="quicktransfer_from"></select> to <select id="quicktransfer_to"></select></p>
+                <button onclick="quickTransfer()">Transfer!</button>
+            </div>
+        </div>
+        <div id="spaceholder_sb1"></div>
+        <div id="add_payment">
+            <h1>Add payment</h1>
+            <input type="text" id="add_payment_name" placeholder="Name/Purpose">
+            <select id="add_payment_budget_selector"></select>
+            <input type="number" id="add_payment_amount" placeholder="Amount">
+            <p>Positive number: Adds money to account</p>
+            <p>Negative number: Takes money from account</p>
+            <button id="add_payment_confirm" onclick="addPayment()">Add</button>
+        </div>
+        <div id="settings">
+            <img src="assets/img/dark_mode_toggle.png" onclick="toggleDarkMode()" id="toggle_darkmode">
+        </div>
+    </div>
+    <iframe id="content" src="subpages/overview.html"></iframe>
+    <div id="navbar">
+        <img src="assets/img/overview.png" onclick="switchPage('overview')">
+        <img src="assets/img/payment_list.png" onclick="switchPage('payment_list')">
+        <img src="assets/img/budgets.png" onclick="switchPage('budgets')">
+        <img src="assets/img/import_icon.png" onclick="switchPage('import')">
+    </div>
+</body>
+
+</html>

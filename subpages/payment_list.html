@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/subpage.js"></script>
+    <script src="../assets/js/payments.js"></script>
+</head>
+<body>
+    <div id="actual_content">
+        <h1>Payments</h1>
+        <p>List of payments saved in HUB finance</p>
+        <input style="display: none;" id="rename_payment" placeholder="Rename">
+        <input style="display: none;" id="change_payment_amount" placeholder="Amount" type="number">
+        <select style="display: none;" id="change_payment_category"></select>
+        <button style="display: none;" id="change_payment_button" onclick="saveModificationsOnPayment()">Save</button>
+        <ul id="payment_list">
+            <!-- <div class="payment_list_item">
+                <h3><strong>-12.00</strong> | Essen | 17.12.2024 | <strong>Zmittag</strong></h3>
+                <img class="payment_list_item_image" onclick="editPayment(0)" src="../assets/img/edit_icon.png">
+                <img class="payment_list_item_image" onclick="deletePayment(0)" src="../assets/img/delete_icon.png">
+            </div> -->
+        </ul>
+        <h1>Monthly payments</h1>
+        <p>Monthly payments saved in HUB finance will be executed monthly.</p>
+        <input style="display: none;" id="rename_m_payment" placeholder="Rename">
+        <input style="display: none;" id="change_m_payment_amount" placeholder="Amount" type="number">
+        <select style="display: none;" id="change_m_payment_category"></select>
+        <button style="display: none;" id="change_m_payment_button" onclick="saveModificationsOnMonthlyPayment()">Save</button>
+        <ul id="monthly_payment_list">
+            <!-- <div class="payment_list_item">
+                <h3><strong>-12.00</strong> | Essen | 17.12.2024 | <strong>Zmittag</strong></h3>
+                <img class="payment_list_item_image" onclick="editPayment(0)" src="../assets/img/edit_icon.png">
+                <img class="payment_list_item_image" onclick="deletePayment(0)" src="../assets/img/delete_icon.png">
+            </div> -->
+        </ul>
+        <h3>Add monthly payment</h3>
+        <input style="display: inline;" id="name_m_payment" placeholder="Name">
+        <input style="display: inline;" id="m_payment_amount" placeholder="Amount" type="number">
+        <input style="display: inline;" id="m_payment_startdate" placeholder="Start date" type="date">
+        <select style="display: inline;" id="m_payment_category"></select>
+        <button style="display: inline;" id="m_payment_button" onclick="setupMonthlyPayment()">Save</button>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/subpage.js"></script>
+    <script src="../assets/js/import.js"></script>
+</head>
+
+<body>
+    <div id="actual_content">
+        <h1>Import data</h1>
+        <h2>Import from three columns</h2>
+        <p>Paste the content of your description column left, the amounts in the center and the categories on the right.</p>
+        <p>This can be used to import from spreadsheets.</p>
+        <div style="display: flex; flex-direction: row;">
+            <textarea id="textImportDescriptions" placeholder="Descriptions" style="height: 80vh;"></textarea>
+            <textarea id="textImportAmounts" placeholder="Amounts" style="height: 80vh;" type="multiline"></textarea>
+            <textarea id="textImportCategories" placeholder="Categories" style="height: 80vh;" type="multiline"></textarea>
+        </div>
+        <button onclick="startTextImport()">Import data!</button>
+    </div>
+</body>
+
+</html>

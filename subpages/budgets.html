@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/subpage.js"></script>
+    <script src="../assets/js/budgets.js"></script>
+</head>
+
+<body>
+    <div id="actual_content">
+        <h1>Budgets</h1>
+        <ul id="budget_list">
+            <!-- <div class="budget_overview_container">
+                <h2>Budget 1</h2>
+                <h3><strong class="strong_colorful strong_big">0.00</strong> left</h3>
+            </div> -->
+        </ul>
+        <h2>Manage budgets</h2>
+        <div id="addbudget" , style="display: flex; align-items: center;">
+            <input placeholder="Name your budget" id="new_budget_name" , style="width: 150%;">
+            <p> </p><button onclick="create_new_budget()">Create</button>
+
+        </div>
+        <div id="delbudget" , style="display: flex; align-items: center;">
+            <select id="remove_budget_selector"></select>
+            <p> </p><button onclick="remove_selected_budget()">Delete</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html.dark_mode {
+    color: white;
+}
+
+html * {
+    margin: 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: "Poppins";
+    margin-left: 0.5vw;
+    transition: color ease-in-out 0.5s;
+}
+
+h3 {
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-left: 0.5vw;
+    transition: color ease-in-out 0.5s;
+}
+
+p, label, span, h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins";
+    margin-left: 0.5vw;
+    transition: color ease-in-out 0.5s;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar {
+    margin: 0;
+    padding: 0;
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(124, 181, 245);
+    transition: background-color ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+}
+
+#navbar {
+    width: 3vw;
+    height: 100vh;
+    background-color: #ddddff;
+    transition: background-color ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark_mode #navbar{
+    background-color: #000020;
+}
+
+.dark_mode #sidebar {
+    background-color: rgb(0, 20, 43);
+}
+
+#topbar {
+    margin: 0;
+    background-color: #ffffff10;
+    height: fit-content;
+}
+
+#budgets {
+    background-color: transparent;
+    height: auto;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0.5vw;
+    background-color: #000;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.dark_mode ::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+#spaceholder_sb1 {
+    margin-bottom: auto;
+}
+
+#add_payment {
+    background-color: #ffffff10;
+    height: max-content
+}
+
+#settings {
+    background-color: #00000020;
+    height: 5vh;
+}
+
+#content {
+    padding: 3%;
+    border: none;
+    background-color: #ccf;
+    width: 75vw;
+    transition: background-color ease-in-out 0.5s;
+}
+
+.dark_mode #content {
+    background-color: #112;
+}
+
+#toggle_darkmode {
+    margin-left: 1vh;
+    margin-top: 1vh;
+    height: 3vh;
+    filter: invert(1);
+    transition: filter ease-in-out 0.5s;
+}
+
+.dark_mode #toggle_darkmode {
+    filter: invert(0);
+}
+
+strong {
+    font-weight: 700;
+}
+
+.budget_container {
+    padding: 5%;
+    background-color: #ffffff2f;
+    margin-left: 1vw;
+    margin-bottom: 3vh;
+}
+
+.dark_mode .budget_container {
+    background-color: #0000002f;
+}
+
+progress {
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    width: 100%;
+    height: 1vh;
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-value {
+    background-color: #002442;
+    border-radius: 10px 0 0 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+progress::-moz-progress-bar {
+    background-color: #002442;
+    border-radius: 10px 0 0 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.dark_mode progress::-webkit-progress-value {
+    background-color: #00a2ff;
+    border-radius: 10px 0 0 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.dark_mode progress::-webkit-progress-bar {
+    background-color: #333;
+    transition: all ease-in-out 0.5s;
+}
+
+.dark_mode progress::-moz-progress-bar {
+    background-color: #00a2ff;
+    border-radius: 10px 0 0 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+select {
+    background-color: #00000044;
+    color: #000;
+    margin-left: 0.5vw;
+    font-size: large;
+    width: 23%;
+    transition: all 0.5s ease, color 0.5s ease;
+}
+
+.dark_mode select {
+    color: #fff;
+}
+
+option {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s ease, color 0.5s ease;
+}
+
+.dark_mode option {
+    background-color: #000;
+    color: #fff;
+}
+
+input, textarea {
+    background-color: #00000044;
+    color: #000;
+    height: max-content;
+    border: none;
+    margin-top: 1vh;
+    margin-left: 0.5vw;
+    margin-bottom: 0.5vh;
+    font-size: large;
+    width: 23%;
+}
+
+.dark_mode input, textarea {
+    color: #fff;
+}
+
+button {
+    background-color: #00000044;
+    color: #000;
+    border: none;
+    margin-top: 1vh;
+    margin-left: 0.5vw;
+    margin-bottom: 0.5vh;
+    font-size: large;
+    width: 23%;
+    height: 3vh;
+    transition: all 0.5s ease, color 0.5s ease;
+}
+
+button:hover {
+    background-color: #00000066;
+    border: none;
+    margin-top: 1vh;
+    margin-left: 0.5vw;
+    font-size: large;
+    width: 23%;
+    height: 3vh;
+}
+
+#add_payment_confirm {
+    width: 70%;
+}
+
+#account_selector, #new_account_name {
+    width: 60%;
+}
+
+.small-btn {
+    width: min-content;
+}
+.small-btn:hover {
+    width: min-content;
+}
+
+.dark_mode button {
+    color: #fff
+}
+
+.xxl {
+    font-size: 500%;
+}
+
+#payment_list {
+    margin-top: 5%;
+}
+
+.payment_list_item {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    height: 6vh;
+    width: 85vw;
+}
+
+.payment_list_item h3 {
+    width: 70vw;
+    overflow-x: scroll;
+    text-wrap: 0;
+    text-wrap-mode: nowrap;
+}
+
+.payment_list_item strong {
+    width: 70vw;
+    overflow-x: scroll;
+    text-wrap: 0;
+    text-wrap-mode: nowrap;
+    color: #55f;
+}
+
+.payment_list_item ::-webkit-scrollbar{
+    height: 0;
+}
+
+.payment_list_item_image {
+    margin-left: auto;
+    filter: invert(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.dark_mode .payment_list_item_image {
+    filter: invert(0);
+}
+
+
+#navbar img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 1vh;
+}
+
+.small_number_input {
+    width: 20%;
+}
+
+.strong_colorful {
+    color: #002442;
+    transition: all ease-in-out 0.5s;
+}
+
+.dark_mode .strong_colorful {
+    color: #00a2ff;
+}
+
+.strong_big {
+    font-size: 150%;
+}
+
+.strong_warning {
+    color: red;
+}
