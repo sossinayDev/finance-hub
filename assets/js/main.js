@@ -234,6 +234,8 @@ function evaluateMonthlyPayments() {
 
 function add_monthly_payment(name, amount, category) {
     let data = { name: name, amount: amount, category: category, timestamp: Date.now() }
+    monthly_payments=loadMonthlyPayments()
+    console.log(monthly_payments)
     monthly_payments.push(data)
     saveMonthlyPayments()
 }

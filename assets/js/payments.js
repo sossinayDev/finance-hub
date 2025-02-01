@@ -16,7 +16,7 @@ function cancelProcesses() {
 }
 
 function load_categories() {
-    categories = JSON.parse(localStorage.getItem("categories"))
+    categories = getCategories()
     if (!categories) {
         categories = []
         localStorage.setItem("categories", "[]")

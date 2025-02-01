@@ -97,12 +97,13 @@ function quickTransfer() {
     let amount = document.getElementById("quicktransfer_amount").value
     console.log(from, to, amount)
     let p_data = {}
-    p_data.name = `QuickTransfer: ${amount} ${from} -> ${to}`
+    p_data.name = `QuickTransfer: ${amount} Transferred to ${to}`
     p_data.amount = -amount
     p_data.category = from
+    payments=loadPayments()
     payments.push(p_data)
     p_data = {}
-    p_data.name = `QuickTransfer: ${amount} ${from} -> ${to}`
+    p_data.name = `QuickTransfer: ${amount} Transferred from ${from}`
     p_data.amount = amount
     p_data.category = to
     payments.push(p_data)

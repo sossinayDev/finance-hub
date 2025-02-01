@@ -11,6 +11,11 @@ function create_new_budget() {
 
 function remove_selected_budget() {
     let budget_name = document.getElementById("remove_budget_selector").value
+    budgets = getCategories()
+    console.log(budgets)
+    delete budgets[budget_name]
+    save_categories(budgets)
+    updatePageContent()
 }
 
 function loadBudgets(){
