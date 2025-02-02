@@ -10,6 +10,7 @@ Part of the "Hub" program
   - [Data Import](#data-import)
   - [Multiple Accounts](#multiple-accounts)
 - [What's to come?](#whats-to-come)
+- [Bugs](#bugs)
 
 ## What is this
 Finance Hub is a basic tool to manage your budgets and keep track of multiple accounts simultaneously.  
@@ -64,4 +65,7 @@ To delete an account, select it and click the [X] button.
 - Widgets for "The Hub" new tab site
 - Improved monthly payments feature
 - Currency support (e.g., displaying "$0.00" or "0.00€" instead of "0.00")
-s
+## Bugs
+- [ ] QuickTransfers without inputs
+- [ ] Page doesn't update after editing categories
+- [ ] Monthly payments don't work
