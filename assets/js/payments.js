@@ -18,8 +18,8 @@ function cancelProcesses() {
 function load_categories() {
     categories = getCategories()
     if (!categories) {
-        categories = []
-        localStorage.setItem("categories", "[]")
+        categories = {}
+        save_categories(categories)
     }
     let cat_select1 = document.getElementById("change_payment_category")
     let cat_select2 = document.getElementById("change_m_payment_category")
